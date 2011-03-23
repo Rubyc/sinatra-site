@@ -42,7 +42,7 @@ body{
 #container {
   @include container;
   padding-bottom:111px;
-  background: url("../images/cube.png") no-repeat 540px 0  #FFFFFF;
+  background: url("../images/cube.png") no-repeat 540px -60px  #FFFFFF;
 }
 header {
   @include column(12,true);
@@ -57,7 +57,7 @@ section.content {
  ul {
     @include column(24,true);
     text-align:center;
-    margin: 0 0 0 103px;
+    margin: 10% 0 0 103px;
    li {
       background: url("../images/icon-container.png") no-repeat  transparent;
       list-style:none;
