@@ -33,27 +33,27 @@ body{
   @include blueprint-debug;
   @include blueprint-interaction;
   font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
+  background: url("../images/cube.png") no-repeat 800px 0  #FFFFFF;
+  p{
+    margin: 0;
+  }
 }
 #wrapper {
- min-height:100%;
+ min-height:300px;
  position: relative;
 }
 
 #container {
   @include container;
-  padding-bottom:111px;
-  background: url("../images/cube.png") no-repeat 540px 0  #FFFFFF;
 }
 header {
-  @include column(12,true);
   height: 170px;
-  background: url("../images/logo-rubyc.png") no-repeat  #FFFFFF;
-  display:block;
-  float:none;
+  img{
+    margin-left: 120px;
+  }
 }
 section.content {
  background-color:white;
- text-align:center;
  ul {
     @include column(24,true);
     text-align:center;
@@ -75,21 +75,26 @@ section.content {
    font-size:7em;
    font-weight:bold;
    color: #dcdcdc;
+   text-align:center;
  }
 }
 
-footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
+.footer {
+   background:url("../images/footer.png") repeat-x transparent;
+   bottom: 0;
    height:111px;   /* Height of the footer */
-   background:url("../images/footer.png") repeat-x  transparent;
    text-align:center;
+   width: 100%;
    p {
      color: red;
      font-weight:bold;
+     position: relative;
+     top: 30px;
      a {
-       margin-top:10px;
+       margin-left:10px;
+     }
+     img {
+       vertical-align: middle;
      }
    }
 }
