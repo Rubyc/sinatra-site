@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 
 html { font-size: 100.01%; }
@@ -91,7 +90,7 @@ body .first { margin-left: 0; padding-left: 0; }
 body .last { margin-right: 0; padding-right: 0; }
 body .top { margin-top: 0; padding-top: 0; }
 body .bottom { margin-bottom: 0; padding-bottom: 0; }
-body .showgrid { background: url('../images/grid.png?1300822119'); }
+body .showgrid { background: url('../images/grid.png?1300921069'); }
 body .error { padding: 0.8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 body .error a { color: #8a1f11; }
 body .notice { padding: 0.8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fff6bf; color: #514721; border-color: #ffd324; }
@@ -121,6 +120,7 @@ section.content p { display: inline; float: left; margin-right: 0; width: 950px;
 footer { position: absolute; bottom: 0; width: 100%; height: 111px; /* Height of the footer */ background: url("../images/footer.png") repeat-x transparent; text-align: center; }
 footer p { color: red; font-weight: bold; }
 footer p a { margin-top: 10px; }
+footer p img { vertical-align: middle; }
 
 body.bp { line-height: 1.5; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; color: #333333; font-size: 75%; }
 body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 { font-weight: normal; color: #222222; }
@@ -174,7 +174,7 @@ body.bp .first { margin-left: 0; padding-left: 0; }
 body.bp .last { margin-right: 0; padding-right: 0; }
 body.bp .top { margin-top: 0; padding-top: 0; }
 body.bp .bottom { margin-bottom: 0; padding-bottom: 0; }
-body.bp .showgrid { background: url('../images/grid.png?1300822119'); }
+body.bp .showgrid { background: url('../images/grid.png?1300921069'); }
 body.bp .error { padding: 0.8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 body.bp .error a { color: #8a1f11; }
 body.bp .notice { padding: 0.8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fff6bf; color: #514721; border-color: #ffd324; }
