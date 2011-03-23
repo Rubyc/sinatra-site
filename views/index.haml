@@ -2,11 +2,33 @@
 %html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
   %head
     %title rubyc
-    %link(rel="stylesheet" href="stylesheets/screen.css")
-  %body.bp
-    #container.showgrid
-      %header
-        %section.top
-      %section.content
+    %link(rel="stylesheet" href="/stylesheets/screen.css")
+  %body
+    #wrapper
+      #container
+        %header
+        %section.content
+          %ul.links
+            %li
+              %a{:href => "http://www.facebook.com/pages/RubyC/158908214151072"}
+                %img{:src => 'images/facebook.png', :alt => 'Facebook'}
+            %li
+              %a{:href => "http://twitter.com/#!/rubyc"}
+                %img{:src => 'images/twitter.png', :alt => 'Twitter'}
+            %li
+              %a{:href => "http://www.meetup.com/rubyco/"}
+                %img{:src => 'images/meetup.png', :alt => 'Meetup'}
+            %li
+              %a{:href => "http://github.com/rubyc"}
+                %img{:src => 'images/github.png', :alt => 'Github'}
+            %li
+              %a{:href => "http://groups.google.com/group/rubyc?hl=en&pli=1"}
+                %img{:src => 'images/google.png', :alt => 'Gmail'}
+          %p
+            Coming Soon
+
+      %footer
         %p
-          Rubyc
+          Powered by
+          %a{:href => 'http://www.crowdint.com'}
+            %img{:src => 'images/logo-crowd.png', :alt => 'Crowd Interactive'}

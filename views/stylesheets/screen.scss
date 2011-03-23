@@ -1,5 +1,8 @@
 // This import applies a global reset to any page that imports this stylesheet.
 @import "blueprint/reset";
+@import "compass/reset";
+// Use Sweet Gradients
+@import "compass/css3";
 
 // To configure blueprint, edit the partials/base.sass file.
 @import "partials/base";
@@ -19,6 +22,79 @@
 // when stylesheets are concatenated together.
 @include blueprint-scaffolding("body.bp");
 
+
+html, body {
+ height:100%;
+
+}
+body{
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+  font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+#wrapper {
+ min-height:100%;
+ position: relative;
+}
+
+#container {
+  @include container;
+  padding-bottom:111px;
+  background: url("../images/cube.png") no-repeat 540px 0  #FFFFFF;
+}
+header {
+  @include column(12,true);
+  height: 170px;
+  background: url("../images/logo-rubyc.png") no-repeat  #FFFFFF;
+  display:block;
+  float:none;
+}
+section.content {
+ background-color:white;
+ text-align:center;
+ ul {
+    @include column(24,true);
+    text-align:center;
+    margin: 0 0 0 103px;
+   li {
+      background: url("../images/icon-container.png") no-repeat  transparent;
+      list-style:none;
+      float: left;
+      width: 136px;
+      height: 124px;
+      a {
+        margin-top:34px;
+        display:block;
+      }
+   }
+  }
+ p {
+   @include column(24,true);
+   font-size:7em;
+   font-weight:bold;
+   color: #dcdcdc;
+ }
+}
+
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:111px;   /* Height of the footer */
+   background:url("../images/footer.png") repeat-x  transparent;
+   text-align:center;
+   p {
+     color: red;
+     font-weight:bold;
+     a {
+       margin-top:10px;
+     }
+   }
+}
+
+//Blueprint's trash
 body.bp {
   @include blueprint-typography(true);
   @include blueprint-utilities;
@@ -27,12 +103,11 @@ body.bp {
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
 }
-
 form.bp {
   @include blueprint-form; }
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
-body.two-col {
+body.two-cl {
   #container {
     @include container; }
   #header, #footer {

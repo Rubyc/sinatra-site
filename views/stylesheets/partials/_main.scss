@@ -1,0 +1,57 @@
+
+html, body {
+ height:100%;
+
+}
+body{
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+}
+#wrapper {
+ min-height:100%;
+ position: relative;
+}
+
+#container {
+  @include container;
+  padding-bottom:60px;
+  background: url("../images/cube.png") no-repeat 540px 0  #FFFFFF;
+}
+header {
+  @include column(12,true);
+  height: 250px;
+  background: url("../images/logo-rubyc.png") no-repeat  #FFFFFF;
+  display:block;
+  float:none;
+}
+section.content {
+ background-color:white;
+ text-align:center;
+ ul {
+    @include column(24,true);
+    text-align:center;
+   li {
+      list-style:none;
+      float: left;
+      width: 100px;
+      height: 100px;
+      padding-left: 20px;
+      a {
+        display:block;
+      }
+   }
+  }
+ p {
+   @include column(24,true);
+ }
+}
+
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:url("/images/footer.png") repeat-y  #FFFFFF;
+}
